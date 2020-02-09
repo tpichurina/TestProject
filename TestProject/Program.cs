@@ -7,7 +7,9 @@ namespace TestProject
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Console.WriteLine("Hello World!");
+            
+            
             Console.ReadLine();
 
             Student std1;
@@ -26,6 +28,22 @@ namespace TestProject
             std1.SetName(name);
             std1.ShowName();
             Console.ReadLine();
+
+            string Fname = "Tanya";
+            int age = 31;
+            bool progremer = true;
+            Console.WriteLine($"Name: {Fname}");
+            Console.WriteLine($"Age: {age}");
+            Console.WriteLine($"Programmer: {progremer}");
+
+            var message = "Hello";
+            var t = 1000.77;
+            Console.Write(t);
+            Console.Write(message.GetType().ToString());
+
+
+
+
         }
         static void Calculate(Student s)
         {
