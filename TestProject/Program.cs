@@ -36,10 +36,10 @@ namespace TestProject
             Console.WriteLine($"Age: {age}");
             Console.WriteLine($"Programmer: {progremer}");
 
-            var message = "Hello";
+            var message = new Student();
             var t = 1000.77;
-            Console.Write(t);
-            Console.Write(message.GetType().ToString());
+            Console.WriteLine(t);
+            Console.WriteLine(message.ToString());
 
 
 
