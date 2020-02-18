@@ -41,6 +41,35 @@ namespace TestProject
             Console.WriteLine(t);
             Console.WriteLine(message.ToString());
 
+           // string namem = "Tanya";
+           // int age5 = 31;
+            //double height = 1.7;
+            //Console.WriteLine($"Name: {namem} Age {4+7}year Height {height}m");
+
+            string namem = "Tanya";
+            int age5 = 31;
+            double height = 1.7;
+            Console.WriteLine("Name: {0} Age {1}year Height {2}m", namem, age5, height);
+
+            Console.WriteLine("Enter name of your cat: ");
+            string catname = Console.ReadLine();
+            Console.WriteLine($"You so cute {catname} ;-)");
+
+            Console.Write("Enter name: ");
+            string name1 = Console.ReadLine();
+
+            Console.Write("Enter age: ");
+            int age1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter cat age: ");
+            double catage = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"Name: {name1}, Age: {age1}, Cat Age: {catage}");
+        
+
+
+
+
 
 
 
