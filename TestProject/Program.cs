@@ -49,21 +49,31 @@ namespace TestProject
           
             Console.WriteLine("Hello Player2");
             Console.WriteLine("Guess number, you have 5 attampts");
-           int answer = Convert.ToInt32(Console.ReadLine());
+           
             int countAttamps = 0;
             while (countAttamps < 5)
             {
+                int answer = Convert.ToInt32(Console.ReadLine());
                 if (answer != number)
                 {
+                    Console.Clear();
                     Console.WriteLine("Sorry, try againe");
-                    
+                    countAttamps = countAttamps + 1;
+                    if (countAttamps == 5)
+                    {
+                      Console.Clear();
+                      Console.WriteLine("you are looser");
+                    }
                 }
                 else
                 {
                     Console.WriteLine("You are win");
-
+                    countAttamps = 5;
                 }
+
             }
+
+           
         }
     }
 }
