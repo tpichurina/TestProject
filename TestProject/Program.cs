@@ -8,20 +8,24 @@ namespace TestProject
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Please enter your number");
-            double number = Convert.ToDouble(Console.ReadLine());
-            while (number>0)
+            Console.WriteLine("Please enter your text");
+            string text;
+            int number = 2;
+            do
             {
-                Console.WriteLine(--number);
-                
-                if (number==0)
+                text = Console.ReadLine();
+                if (text != "stop")
                 {
-                    Console.WriteLine("Boom");
-                    
-                   
+                    Console.WriteLine(text + number);
+                    number+=2;
                 }
-              
             }
+            while (text != "stop");
+
+
+
+
+
 
         }
     }
